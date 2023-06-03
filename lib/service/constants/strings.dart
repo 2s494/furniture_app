@@ -1,6 +1,7 @@
 enum Strings {
   /// Page HomePage
   title("Open\nFashion"),
+  myCart("My Cart"),
   luxury("LUXURY\n   FASHION\n  &ACCESSORIES"),
   explore("EXPLORE COLLECTION"),
   newArrival("New Arrival"),

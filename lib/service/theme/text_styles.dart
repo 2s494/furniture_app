@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:open_fashion_app/service/constants/colors.dart';
 
 class AppTextStyles {
   AppTextStyles._();
@@ -10,7 +11,7 @@ class AppTextStyles {
 
   static const _tenorSans = "TenorSans";
   static const _bodoniModa28pt = "BodoniModa28pt";
-
+  static const _merriWeather = "MerriWeather";
 
   ///MerriWeather
   static const appBarTitle = TextStyle(
@@ -103,5 +104,10 @@ class AppTextStyles {
     fontWeight: FontWeight.w900,
     fontFamily: _bodoniModa28pt,
   );
-}
 
+  static final appBarStyle = TextStyle(
+      color: CustomColors.titleActive.color,
+      fontFamily: _merriWeather,
+      fontSize: 18,
+      fontWeight: _bold);
+}

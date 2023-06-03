@@ -47,8 +47,13 @@ flutter:
           weight: 700
           style: italic
 
-
-    - family: TenorSans
+    - family: MerriWeather
       fonts:
-        - asset: assets/fonts/tenor_sans/TenorSans-Regular.ttf
-          weight: 400
+        - asset: assets/fonts/Merriweather/Merriweather-Black.ttf
+        - asset: assets/fonts/Merriweather/Merriweather-BlackItalic.ttf
+        - asset: assets/fonts/Merriweather/Merriweather-Bold.ttf
+        - asset: assets/fonts/Merriweather/Merriweather-BoldItalic.ttf
+        - asset: assets/fonts/Merriweather/Merriweather-Italic.ttf
+        - asset: assets/fonts/Merriweather/Merriweather-Light.ttf
+        - asset: assets/fonts/Merriweather/Merriweather-Regular.ttf
+
