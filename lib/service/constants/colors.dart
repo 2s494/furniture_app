@@ -11,7 +11,8 @@ enum CustomColors {
   label("label", Color(0xFF555555)),
   body("body", Color(0xFF333333)),
   cDEDEDE("cDEDEDE", Color(0xFFDEDEDE)),
-  titleActive("titleActive", Color(0xFF000000));
+  titleActive("titleActive", Color(0xFF000000)),
+  c909090("ic_color", Color(0xFF909090));
 
   const CustomColors(this.title, this.color);
   final Color color;

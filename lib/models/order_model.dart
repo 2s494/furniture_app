@@ -1,6 +1,6 @@
 class Order {
   String id;
-  List<OrderItem> products;
+  // List<OrderItem> products;
   double total;
   int amount;
   String paymentId;
@@ -9,7 +9,7 @@ class Order {
 
   Order({
     required this.id,
-    required this.products,
+    // required this.products,
     required this.total,
     required this.amount,
     required this.paymentId,
@@ -19,7 +19,7 @@ class Order {
 
   Order fromJson(Map<String, Object?> json) {
     String id = json["id"] as String;
-    List<OrderItem> products = json["products"] as List<OrderItem>;
+    // List<OrderItem> products = json["products"] as List<OrderItem>;
     double total = json["total"] as double;
     int amount = json["amount"] as int;
     String paymentId = json["paymentId"] as String;
@@ -29,7 +29,7 @@ class Order {
     return Order(
         modifiedAt: modifiedAt,
         id: id,
-        products: products,
+        // products: products,
         total: total,
         amount: amount,
         paymentId: paymentId,
@@ -38,7 +38,7 @@ class Order {
 
   Map<String, Object?> toJson() => {
         "id": id,
-        "products": products,
+        // "products": products,
         "total": total,
         "amount": amount,
         "paymentId": paymentId,
@@ -52,7 +52,7 @@ class Order {
       other is Order &&
           runtimeType == other.runtimeType &&
           id == other.id &&
-          products == other.products &&
+          // products == other.products &&
           total == other.total &&
           amount == other.amount &&
           paymentId == other.paymentId &&
@@ -61,10 +61,10 @@ class Order {
 
   @override
   int get hashCode => Object.hash(
-      id, products, total, amount, paymentId, createdAt, modifiedAt);
+      id, /*products*/ total, amount, paymentId, createdAt, modifiedAt);
 
   @override
   String toString() {
-    return "Order{id: $id, products: $products, total: $total, amount: $amount, paymentId: $paymentId, createdAt: $createdAt, modifiedAt: $modifiedAt}";
+    return "Order{id: $id, total: $total, amount: $amount, paymentId: $paymentId, createdAt: $createdAt, modifiedAt: $modifiedAt}";
   }
 }

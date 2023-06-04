@@ -108,6 +108,6 @@ class AppTextStyles {
   static final appBarStyle = TextStyle(
       color: CustomColors.titleActive.color,
       fontFamily: _merriWeather,
-      fontSize: 18,
+      fontSize: 25,
       fontWeight: _bold);
 }
